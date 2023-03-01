@@ -169,3 +169,30 @@ Vitejs là 1 công cụ build web cực kỳ nhanh và  cập nhật nhanh chón
 ```
   npm i prop-types
 ```
+
+# install momentJS (Format lại date)
+
+```
+  npm i moment
+```
+
+# install clsx
+
+```
+  npm i clsx
+```
+## install react-toastify (thư viện hiển thị alert dạng toast)
+
+```
+  npm install react-toastify
+```
+
+##  @mui/icons-material (thư viện icon của MUI)
+```
+  npm i @mui/icons-material
+```
+
+## react-chartjs (thư viện vẽ biểu đồ)
+```
+  npm install --save chart.js react-chartjs-2
+```
