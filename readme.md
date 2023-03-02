@@ -196,3 +196,8 @@ Vitejs là 1 công cụ build web cực kỳ nhanh và  cập nhật nhanh chón
 ```
   npm install --save chart.js react-chartjs-2
 ```
+## react-apexcharts  (thư viện vẽ biểu đồ)
+
+```
+  npm install --save react-apexcharts apexcharts
+```
