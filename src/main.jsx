@@ -7,10 +7,12 @@ import "swiper/css";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-// import { Provider } from 'react-redux'
-// import store from 'config/configureStore'
+import { Provider } from "react-redux";
+import store from "config/configureStore";
 ReactDOM.createRoot(document.getElementById("root")).render(
+  <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
+  </Provider>
 );
