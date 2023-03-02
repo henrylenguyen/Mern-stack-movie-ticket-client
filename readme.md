@@ -201,3 +201,8 @@ Vitejs là 1 công cụ build web cực kỳ nhanh và  cập nhật nhanh chón
 ```
   npm install --save react-apexcharts apexcharts
 ```
+## x-data-grid (tạo bảng của MUI)
+
+```
+  npm i @mui/x-data-grid
+```

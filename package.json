@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mui/icons-material": "^5.11.11",
+    "@mui/x-data-grid": "^5.17.25",
     "apexcharts": "^3.37.1",
     "chart.js": "^4.2.1",
     "clsx": "^1.2.1",
