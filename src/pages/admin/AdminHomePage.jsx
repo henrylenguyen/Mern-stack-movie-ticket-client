@@ -14,16 +14,16 @@ const AdminHomePage = () => {
       } transition-all ease-in-out duration-300 `}
     >
       <div className="grid grid-rows-5 grid-cols-4 gap-5">
-         <div className="bg-adminPrimary col-span-4 rounded-xl">
+        <div className="bg-adminPrimary col-span-4 rounded-xl">
           <Statistical></Statistical>
-         </div>
+        </div>
         <div className="col-span-2 row-span-2 bg-adminPrimary py-10 rounded-xl">
           <PieChart></PieChart>
         </div>
         <div className="bg-adminPrimary py-10 px-3 col-span-2 row-span-2 rounded-xl">
           <ColumnChart></ColumnChart>
         </div>
-        <div className="col-span-4 row-span-2">
+        <div className="bg-adminPrimary col-span-4 row-span-2 ">
           <StatisticalTables></StatisticalTables>
         </div>
       </div>

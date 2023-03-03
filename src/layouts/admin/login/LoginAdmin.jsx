@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-
-import { toast, ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import Input from "components/admin/input/Input";
+import { toast, ToastContainer } from "react-toastify";
 
 // schema validation
 const schema = yup
@@ -105,8 +104,8 @@ const LoginAdmin = () => {
             )}
           </button>
         </form>
-      </div>
       <ToastContainer autoClose={1000} />
+      </div>
     </>
   );
 };

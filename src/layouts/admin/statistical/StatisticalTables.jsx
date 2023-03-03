@@ -1,15 +1,27 @@
 import * as React from "react";
+import Box from "@mui/material/Box";
 import { DataGrid } from "@mui/x-data-grid";
 
 const columns = [
-  { field: "id", headerName: "ID", width: 70 },
-  { field: "firstName", headerName: "First name", width: 130 },
-  { field: "lastName", headerName: "Last name", width: 130 },
+  { field: "id", headerName: "ID", width: 90 },
+  {
+    field: "firstName",
+    headerName: "First name",
+    width: 150,
+    editable: true,
+  },
+  {
+    field: "lastName",
+    headerName: "Last name",
+    width: 150,
+    editable: true,
+  },
   {
     field: "age",
     headerName: "Age",
     type: "number",
-    width: 90,
+    width: 110,
+    editable: true,
   },
   {
     field: "fullName",
@@ -36,14 +48,17 @@ const rows = [
 
 export default function StatisticalTables() {
   return (
-    <div style={{ height: 400, width: "100%" }}>
+    <Box sx={{ height: "100%", width: "100%", color: "#fff" }}>
       <DataGrid
         rows={rows}
         columns={columns}
         pageSize={5}
         rowsPerPageOptions={[5]}
         checkboxSelection
+        disableSelectionOnClick
+        experimentalFeatures={{ newEditingApi: true }}
+        sx={{color: "#fff" }}
       />
-    </div>
+    </Box>
   );
 }
