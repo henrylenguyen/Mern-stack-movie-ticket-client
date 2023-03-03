@@ -8,7 +8,7 @@ import routesAdmin from "routes/admin/routesAdmin";
 import bgError from "assets/images/error.png";
 import LoginPage from "pages/Admin/LoginPage";
 import ContainerLayout from "layouts/admin/home/ContainerLayout";
-import ListPage from "pages/Admin/ListPage";
+
 
 
 function App() {
@@ -49,14 +49,9 @@ function App() {
                 path={"/admin"}
                 element={<ContainerLayout></ContainerLayout>}
               >
-                {routesAdmin?.map(({ path, element: Element, slug }, index) => (
+                {routesAdmin?.map(({ path, element: Element }, index) => (
                   <Route key={index} path={path} element={<Element />}>
-                    {slug && (
-                      <Route
-                        path={`${path}/:slug`}
-                        element={<ListPage />}
-                      ></Route>
-                    )}
+                   
                   </Route>
                 ))}
               </Route>

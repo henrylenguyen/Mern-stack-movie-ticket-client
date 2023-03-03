@@ -1,9 +1,9 @@
 import ColumnChart from "layouts/admin/statistical/ColumnChart";
 import PieChart from "layouts/admin/statistical/PieChart";
 import Statistical from "layouts/admin/statistical/Statistical";
-import StatisticalTables from "layouts/admin/statistical/StatisticalTables";
 import React from "react";
 import { useSelector } from "react-redux";
+import ListPage from "./ListPage";
 
 const AdminHomePage = () => {
   const { isOpen } = useSelector((state) => state.navbar);
@@ -24,7 +24,7 @@ const AdminHomePage = () => {
           <ColumnChart></ColumnChart>
         </div>
         <div className="bg-adminPrimary col-span-4 row-span-2 ">
-          <StatisticalTables></StatisticalTables>
+          <ListPage></ListPage>
         </div>
       </div>
     </div>

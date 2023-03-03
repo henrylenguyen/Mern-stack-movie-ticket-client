@@ -159,6 +159,8 @@ export default function ListPage() {
       sortDirections: ['descend', 'ascend'],
     },
   ];
-  return <Table columns={columns} dataSource={data} />;
+  return <div className="flex-grow">
+    <Table columns={columns} dataSource={data} />
+  </div>;
 };
 
