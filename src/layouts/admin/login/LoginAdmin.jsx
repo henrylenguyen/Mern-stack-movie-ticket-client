@@ -104,8 +104,8 @@ const LoginAdmin = () => {
             )}
           </button>
         </form>
-      <ToastContainer autoClose={1000} />
       </div>
+      <ToastContainer autoClose={1000} />
     </>
   );
 };

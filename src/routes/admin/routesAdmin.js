@@ -1,6 +1,7 @@
 
-import ListPage from "layouts/admin/ListPage";
+
 import AdminHomePage from "pages/Admin/AdminHomePage";
+import ListPage from "pages/Admin/ListPage";
 const routesAdmin = [
   {
     path: "/admin/home",

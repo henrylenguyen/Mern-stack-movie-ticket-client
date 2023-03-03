@@ -8,7 +8,8 @@ import routesAdmin from "routes/admin/routesAdmin";
 import bgError from "assets/images/error.png";
 import LoginPage from "pages/Admin/LoginPage";
 import ContainerLayout from "layouts/admin/home/ContainerLayout";
-import ListPage from "layouts/admin/ListPage";
+import ListPage from "pages/Admin/ListPage";
+
 
 function App() {
   const params = window.location.pathname;
