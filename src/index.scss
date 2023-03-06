@@ -180,10 +180,20 @@
 }
 .apexcharts-legend-text {
   color: #fff!important;
+
 }
 .ant-table{
+  background: transparent!important;
   min-height: 450px;
+   color: #fff!important;
+   cursor: pointer;
 }
 button.ant-pagination-item-link {
     color: #fff!important;
+}
+.ant-table-cell-row-hover{
+  background: #93959c5b!important;
+}
+.table-container {
+  overflow-x: auto;
 }
