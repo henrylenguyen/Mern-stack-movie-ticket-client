@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 import { Provider } from "react-redux";
 import store from "config/configureStore";
 import "react-toastify/dist/ReactToastify.css";

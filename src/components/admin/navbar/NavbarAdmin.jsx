@@ -11,7 +11,7 @@ const NavbarAdmin = () => {
   const { isOpen } = useSelector((state) => state.navbar);
   return (
     <div
-      className={`flex flex-col gap-y-5 transition-all ease-in-out duration-300 ${
+      className={`flex flex-col gap-y-5 transition-all ease-in-out duration-300 flex-shrink-0 ${
         isOpen ? " w-[350px] mr-5" : "navbarTransition absolute"
       }`}
     >
