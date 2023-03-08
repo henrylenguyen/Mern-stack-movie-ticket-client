@@ -47,13 +47,13 @@ console.log("dataIndexKey:", dataIndexKey);
 // 3. Tạo ra mảng title chứa các đối tượng title khác nhau, do mình nhập
 const dataTitle = [
   { title: "Mã lịch chiếu" },
+  { title: "Tên phim" },
   {
     title: "Hình ảnh",
   },
   { title: "Tên cụm rạp" },
   { title: "Tên rạp" },
   { title: "Địa chỉ" },
-  { title: "Tên phim" },
   { title: "Ngày chiếu" },
   { title: "Giờ chiếu" },
 ];
