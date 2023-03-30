@@ -206,3 +206,116 @@ Vitejs là 1 công cụ build web cực kỳ nhanh và  cập nhật nhanh chón
 ```
   npm i @mui/x-data-grid
 ```
+
+## react-highlight-words (đánh dấu từ)
+
+```
+  npm i react-highlight-words
+```
+
+## Chakra UI
+
+```
+  npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion
+
+```
+
+## React-modal
+
+```
+  npm i react-modal
+```
+
+## mime-type (dùng để xác định kiểu dữ liệu)
+
+```
+  npm i mime-types
+```
+
+## @headlessui/react
+
+```
+  npm i @headlessui/react
+```
+
+## antd-img-crop (thư viện cắt ảnh của antd)
+
+```
+  npm i antd-img-crop
+```
+
+## react-image-crop
+
+```
+   npm install react-image-crop
+
+```
+
+## react-avatar-editor
+
+```
+npm i react-avatar-editor
+```
+
+## react-dropzone (hỗ trợ upload file)
+
+```
+  npm install --save react-dropzone
+```
+
+## animate.css (hỗ trợ animation động)
+
+```
+  npm install animate.css --save
+```
+
+## react-select
+
+```
+npm install react-select
+
+```
+
+## react-datetime-picker (thư viện tạo lịch)
+
+```
+  npm install react-datetime-picker
+
+```
+
+## react-datepicker
+
+```
+  npm install react-datepicker
+```
+
+## date-fns (đăng kí vùng)
+
+```
+  npm i date-fns
+```
+
+## @mui/lab
+
+```
+npm i @mui/lab
+```
+
+## @mui/x-date-pickers
+
+```
+  npm i @mui/x-date-pickers
+```
+
+## Ck editor
+
+```
+  npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
+
+```
+
+## dompurify (thư viện chuyển mã html sang văn bản thuần)
+
+```
+npm i dompurify
+```
