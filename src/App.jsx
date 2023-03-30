@@ -1,16 +1,15 @@
 import PageNotFound from 'pages/NotFoundPage';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import routes from 'routes/routes';
-import { fetchProfile } from 'thunks/userThunk';
 
 import { fetchLayThongTinTaiKhoan } from 'thunks/admin/userThunks';
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchProfile());
+    // dispatch(fetchProfile());
     dispatch(fetchLayThongTinTaiKhoan());
   }, []);
   return (

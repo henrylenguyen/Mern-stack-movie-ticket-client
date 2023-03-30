@@ -1,11 +1,4 @@
-import HomePage from "pages/HomePage";
-import SignUpPage from "pages/SignUpPage";
-import SignInPage from "pages/SignInPage.jsx";
-import BookingPage from "pages/BookingPage";
-import DetailsPage from "pages/DetailsPage.jsx";
 
-import UserPage from "pages/UserPage";
-import SeatPage from "pages/SeatPage";
 import AdminHomePage from "pages/Admin/AdminHomePage";
 import AddNewCinema from "pages/Admin/cinema/AddNewCinema";
 import CinemaList from "pages/Admin/cinema/CinemaList";
@@ -20,37 +13,37 @@ import ContainerLayout from "layouts/admin/home/ContainerLayout";
 
 import LoginPage from "pages/Admin/LoginPage";
 const routes = [
-  {
-    path: "/",
-    component: HomePage,
-    children: [
-      {
-        index: true,
-        component: BookingPage,
-      },
-      {
-        path: "/user-info",
-        component: UserPage,
-      },
-      {
-        path: "/detail/:movieId",
-        component: DetailsPage,
-      },
+  // {
+  //   path: "/",
+  //   component: HomePage,
+  //   children: [
+  //     {
+  //       index: true,
+  //       component: BookingPage,
+  //     },
+  //     {
+  //       path: "/user-info",
+  //       component: UserPage,
+  //     },
+  //     {
+  //       path: "/detail/:movieId",
+  //       component: DetailsPage,
+  //     },
 
-      {
-        path: "/seats/:scheduleId",
-        component: SeatPage,
-      },
-      {
-        path: "/signIn",
-        component: SignInPage,
-      },
-      {
-        path: "/signUp",
-        component: SignUpPage,
-      },
-    ],
-  },
+  //     {
+  //       path: "/seats/:scheduleId",
+  //       component: SeatPage,
+  //     },
+  //     {
+  //       path: "/signIn",
+  //       component: SignInPage,
+  //     },
+  //     {
+  //       path: "/signUp",
+  //       component: SignUpPage,
+  //     },
+  //   ],
+  // },
   {
     path: "/admin",
     component: ContainerLayout,
