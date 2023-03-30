@@ -1,7 +1,6 @@
 import NavbarAdmin from "components/admin/navbar/NavbarAdmin";
 import Search from "components/admin/search/Search";
 import { ACCESS_TOKEN_ADMIN } from "constants/admin/constants";
-import { ACCESS_TOKEN } from "constants/constants";
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { Outlet, useNavigate } from "react-router-dom";
@@ -9,21 +8,21 @@ import bgError from "assets/images/error.png";
 
 const ContainerLayout = () => {
   const navigate = useNavigate();
-  const { userLogin } = useSelector((state) => state.user);
+  // const { userLogin } = useSelector((state) => state.user);
   const { loginInfor } = useSelector((state) => state.userAdmin);
   const params = window.location.pathname;
   const token = localStorage.getItem(ACCESS_TOKEN_ADMIN);
-  const tokenUser = localStorage.getItem(ACCESS_TOKEN);
+  // const tokenUser = localStorage.getItem(ACCESS_TOKEN);
   useEffect(() => {
     let isQuanTri = localStorage.getItem("isQuanTri") || false;
     if (
-      userLogin?.maLoaiNguoiDung === "QuanTri" ||
+      // userLogin?.maLoaiNguoiDung === "QuanTri" ||
       loginInfor?.maLoaiNguoiDung === "QuanTri"
     ) {
       isQuanTri = true;
       localStorage.setItem("isQuanTri", true);
     } 
-    if (token || tokenUser) {
+    if (token) {
       if (isQuanTri && params === "/admin") navigate("/admin/home");
     } else {
       if (!isQuanTri) navigate("/admin/login");

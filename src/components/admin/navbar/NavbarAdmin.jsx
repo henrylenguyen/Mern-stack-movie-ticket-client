@@ -10,7 +10,7 @@ import Swal from "sweetalert2";
 import MyButton from "../button/MyButton";
 import { message } from "antd";
 import { ACCESS_TOKEN_ADMIN } from "constants/admin/constants";
-import { ACCESS_TOKEN } from "constants/constants";
+// import { ACCESS_TOKEN } from "constants/constants";
 import { fetchLayThongTinTaiKhoan } from "thunks/admin/userThunks";
 const NavbarAdmin = () => {
   const { isOpen } = useSelector((state) => state.navbar);
@@ -24,7 +24,7 @@ const NavbarAdmin = () => {
   
   const handleLogout = () => {
     localStorage.removeItem(ACCESS_TOKEN_ADMIN);
-    localStorage.removeItem(ACCESS_TOKEN);
+    // localStorage.removeItem(ACCESS_TOKEN);
     localStorage.removeItem("isQuanTri");
    let timerInterval;
    Swal.fire({
