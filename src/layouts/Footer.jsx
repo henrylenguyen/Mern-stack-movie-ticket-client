@@ -1,96 +1,195 @@
-import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline';
-import React from 'react';
+import React from "react";
+import "./styles/footer.scss";
+import appStore from "assets/images/appStore.jpg";
+import googlePlay from "assets/images/GooglePlay.jpg";
+import facebook from "assets/images/logo/facebook.png";
+import zalo from "assets/images/logo/zalo.png";
+import zion from "assets/images/logo/zionjfif.jfif";
+import announce from "assets/images/logo/daThongBao-logo.cb85045e.png";
+import cgv from "assets/images/logo/cgv.png";
+import bhd from "assets/images/logo/bhdpng.png";
+import galaxy from "assets/images/logo/galaxy.png";
+import star from "assets/images/logo/star.png";
+import dongda from "assets/images/logo/dongapng.png";
+import beta from "assets/images/logo/beta.jfif";
+import zalopay from "assets/images/logo/zalopay.png";
+import vietinbank from "assets/images/logo/vietinbank.png";
+import lotte from "assets/images/logo/lotte.png";
 
-const Footer = () => {
+function Footer() {
   return (
-    <div className="relative isolate overflow-hidden py-16 sm:py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 lg:max-w-none lg:grid-cols-2">
-          <div className="max-w-xl lg:max-w-lg">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Subscribe to our newsletter.
-            </h2>
-            <p className="mt-4 text-lg leading-8 text-gray-300">
-              Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing
-              velit quis. Duis tempor incididunt dolore.
-            </p>
-            <div className="mt-6 flex max-w-md gap-x-4">
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                id="email-address"
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-                className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
-                placeholder="Enter your email"
-              />
-              <button
-                type="submit"
-                className="flex-none rounded-md bg-indigo-500 py-2.5 px-3.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-              >
-                Subscribe
-              </button>
+    <footer className="footer">
+      <div className="footer__content container mx-auto py-10 px-6">
+        <div className="footer__top pb-10 border-b-2 border-solid border-zinc-100">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
+            <div className="footer__item col-span-1 text-center lg:text-left">
+              <h2 className="text-base text-white mb-4 uppercase">
+                MovieTheater
+              </h2>
+              <div className="flex flex-col gap-2">
+                <a href="#" className="text-sm inline-block ">
+                  Giới thiệu
+                </a>
+                <a href="#" className="text-sm inline-block ">
+                  FAQ
+                </a>
+                <a href="#" className="text-sm inline-block">
+                  Brand Guidelines
+                </a>
+              </div>
+            </div>
+
+            <div className="footer__item col-span-1 text-center lg:text-left">
+              <h2 className="text-base text-white mb-4 uppercase">
+                Thỏa thuận
+              </h2>
+              <div className="flex flex-col gap-2">
+                <a href="#" className="text-sm inline-block">
+                  Thỏa thuận sử dụng
+                </a>
+                <a href="#" className="text-sm inline-block">
+                  Chích sách bảo mật
+                </a>
+
+                <a href="#" className="text-sm inline-block">
+                  Chích sách thanh toán
+                </a>
+
+                <a href="#" className="text-sm inline-block">
+                  Điều khoản chung
+                </a>
+              </div>
+            </div>
+
+            <div className="footer__item col-span-1 text-center lg:text-left">
+              <h2 className="text-base text-white mb-4 uppercase">Đối tác</h2>
+              <div className="grid grid-cols-4 gap-x-4 gap-y-6">
+                <div className="footer__item-container col-span-1">
+                  <a target="_blank" href="https://www.cgv.vn/default/">
+                    <img src={cgv} className="w-8" />
+                  </a>
+                </div>
+
+                <div className="footer__item-container col-span-1">
+                  <a target="_blank" href="https://www.galaxycine.vn/">
+                    <img src={galaxy} className="w-8" />
+                  </a>
+                </div>
+
+                <div className="footer__item-container col-span-1">
+                  <a target="_blank" href="http://ddcinema.vn/">
+                    <img src={dongda} className="w-8" />
+                  </a>
+                </div>
+
+                <div className="footer__item-container col-span-1">
+                  <a target="_blank" href="https://cinestar.com.vn/">
+                    <img src={star} className="w-8" />
+                  </a>
+                </div>
+
+                <div className="footer__item-container col-span-1">
+                  <a target="_blank" href="https://www.bhdstar.vn/">
+                    <img src={bhd} className="w-8" />
+                  </a>
+                </div>
+
+                <div className="footer__item-container col-span-1">
+                  <a target="_blank" href="https://www.betacinemas.vn/home.htm">
+                    <img src={beta} className="w-8 rounded-full " />
+                  </a>
+                </div>
+
+                <div className="footer__item-container col-span-1">
+                  <a target="_blank" href="https://www.vietinbank.vn/">
+                    <img src={vietinbank} className="w-8 rounded-full " />
+                  </a>
+                </div>
+
+                <div className="footer__item-container col-span-1">
+                  <a target="_blank" href="https://zalopay.vn/">
+                    <img src={zalopay} className="w-8 rounded-full " />
+                  </a>
+                </div>
+
+                <div className="footer__item-container col-span-1">
+                  <a target="_blank" href="https://www.lottecinemavn.com/">
+                    <img src={lotte} className="w-8 rounded-full " />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="footer__item col-span-1 text-center lg:text-left">
+              <h2 className="text-base text-white mb-4 uppercase">Ứng dụng</h2>
+              <div className="flex justify-center lg:justify-start gap-4">
+                <a
+                  target="_blank"
+                  href="https://www.apple.com/vn/app-store/"
+                  className="text-sm inline-block"
+                >
+                  <img className="w-28" src={appStore} />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://play.google.com/"
+                  className="text-sm inline-block"
+                >
+                  <img className="w-28" src={googlePlay} />
+                </a>
+              </div>
+            </div>
+
+            <div className="footer__item col-span-1 text-center lg:text-left">
+              <h2 className="text-base text-white mb-4 uppercase">Liên hệ</h2>
+              <div className="flex gap-4 justify-center lg:justify-start ">
+                <a href="#" className="text-sm inline-block">
+                  <img className="w-6" src={facebook} />
+                </a>
+                <a href="#" src="#" className="text-sm block">
+                  <img className="w-6" src={zalo} />
+                </a>
+              </div>
             </div>
           </div>
-          <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
-            <div className="flex flex-col items-start">
-              <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-                <CalendarDaysIcon
-                  className="h-6 w-6 text-white"
-                  aria-hidden="true"
-                />
-              </div>
-              <dt className="mt-4 font-semibold text-white">Weekly articles</dt>
-              <dd className="mt-2 leading-7 text-gray-400">
-                Non laboris consequat cupidatat laborum magna. Eiusmod non irure
-                cupidatat duis commodo amet.
-              </dd>
+        </div>
+        <div className="footer__bottom py-6 ">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+            <div className="footer__item col-span-1 flex md:block justify-center">
+              <img src={zion} className="w-2/5" />
             </div>
-            <div className="flex flex-col items-start">
-              <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
-                <HandRaisedIcon
-                  className="h-6 w-6 text-white"
-                  aria-hidden="true"
-                />
+            <div className="footer__item col-span-1 md:col-span-3 text-center md:text-left text-white">
+              <h2 className="text-base uppercase mb-4">
+                TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN MOVIETHEATER VIETNAM
+              </h2>
+              <div className="">
+                <h6 className="text-sm">
+                  Địa chỉ: ZXX Đường số XX, Phường Tân Thuận Đông, Quận X, Tp.
+                  Hồ Chí Minh, Việt Nam.
+                </h6>
+                <h6 className="text-sm">
+                  Giấy chứng nhận đăng ký kinh doanh số: 010165xxxx,
+                </h6>
+                <h6 className="text-sm">
+                  Đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở
+                  kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.
+                </h6>
+                <h6 className="text-sm">
+                  Số Điện Thoại (Hotline): 1900 545 xxx
+                </h6>
+                <h6 className="text-sm">
+                  COPYRIGHT 2017 CJ MOVIETHEATER. All RIGHTS RESERVED .
+                </h6>
               </div>
-              <dt className="mt-4 font-semibold text-white">No spam</dt>
-              <dd className="mt-2 leading-7 text-gray-400">
-                Officia excepteur ullamco ut sint duis proident non adipisicing.
-                Voluptate incididunt anim.
-              </dd>
             </div>
-          </dl>
+            <div className="footer__item col-span-1 flex md:block justify-center">
+              <img src={announce} className="w-2/5" />
+            </div>
+          </div>
         </div>
       </div>
-      <svg
-        className="absolute top-0 left-1/2 -z-10 h-[42.375rem] -translate-x-1/2 blur-3xl xl:-top-6"
-        viewBox="0 0 1155 678"
-        fill="none"
-      >
-        <path
-          fill="url(#09dbde42-e95c-4b47-a4d6-0c523c2fca9a)"
-          fillOpacity=".3"
-          d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
-        />
-        <defs>
-          <linearGradient
-            id="09dbde42-e95c-4b47-a4d6-0c523c2fca9a"
-            x1="1155.49"
-            x2="-78.208"
-            y1=".177"
-            y2="474.645"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stopColor="#9089FC" />
-            <stop offset={1} stopColor="#FF80B5" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
+    </footer>
   );
-};
+}
 
 export default Footer;
