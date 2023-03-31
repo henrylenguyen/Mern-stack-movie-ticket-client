@@ -40,8 +40,7 @@ const Form = ({
     }
     return acc;
   }, []);
-  
-
+  console.log("newFields:", newFields);
 
   return (
     <>
@@ -74,6 +73,7 @@ const Form = ({
                       options={rest.options}
                       name={name}
                       errors={errors[name]}
+                      defaultValue={rest.value}
                     />
                   ) : type === "radio" ? (
                     <Radio
@@ -82,18 +82,14 @@ const Form = ({
                       options={rest.options}
                       name={name}
                       errors={errors[name]}
+                      defaultValue={rest.value}
                     />
                   ) : type === "file" ? (
                     <ImageUpload
                       name={name}
                       control={control}
                       errors={errors[name]}
-                      // defaultValue={[
-                      //   {
-                      //     preview:
-                      //       rest.value,
-                      //   },
-                      // ]}
+                      defaultValue={rest.value}
                     />
                   ) : type === "select" ? (
                     <Dropdown
@@ -116,6 +112,14 @@ const Form = ({
                       name={name}
                       errors={errors}
                       type="time"
+                    />
+                  ) : type === "datetime" ? (
+                    <DateTimePickerField
+                      control={control}
+                      name={name}
+                      errors={errors}
+                      type="datetime"
+                      defaultValue={rest.value}
                     />
                   ) : (
                     <input
